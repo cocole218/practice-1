@@ -1,0 +1,38 @@
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>01圖文滿版</title>
+
+    <link rel="stylesheet" href="01.css">
+</head>
+
+<body>
+<!-- 渲染到瀏覽器的區塊 -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App =()=>{
+            return (
+                <>
+                <div className="banner">
+                    <div className="container">
+                        <div className="banner-txt">
+                            <h1>
+                                主標題
+                                <small>
+                                    主標題內容
+                                </small>
+                            </h1>
+                            <h2>
+                                副標題
+                                <p>
+                                    副標題內容副標題內容
+                                </p>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )}
+        ReactDOM.createRoot(document.getElementById('root')).render(<App/>)
+    </script>
